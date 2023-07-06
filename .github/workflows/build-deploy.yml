@@ -41,3 +41,4 @@ jobs:
         branch: gh-pages
         directory: src/front/build
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        force_with_lease: true
