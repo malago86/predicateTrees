@@ -7,12 +7,13 @@ on:
   pull_request:
     branches:
       - main
+      
+defaults:
+  run:
+    working-directory: src/front
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: src/front
     name: Build
     runs-on: ubuntu-latest
     
