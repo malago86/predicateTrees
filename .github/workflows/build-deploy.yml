@@ -10,6 +10,9 @@ on:
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: src/front
     name: Build
     runs-on: ubuntu-latest
     
