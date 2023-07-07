@@ -34,13 +34,13 @@ jobs:
     
     # - name: Run tests
     #   run: npm run test
-    - name: TEST
-      run: |
-        ls -R
+    # - name: TEST
+    #   run: |
+    #     ls -R
 
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         branch: gh-pages
-        directory: src/front/build
+        directory: ./build
         github_token: ${{ secrets.GITHUB_TOKEN }}
